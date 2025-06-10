@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Specs on Prometheus</title><link>https://marios2019.github.io/prometheus_docs/tags/specs/</link><description>Recent content in Specs on Prometheus</description><generator>Hugo</generator><language>en</language><atom:link href="https://marios2019.github.io/prometheus_docs/tags/specs/index.xml" rel="self" type="application/rss+xml"/><item><title>Hardware Specifications</title><link>https://marios2019.github.io/prometheus_docs/docs/hardware/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/hardware/</guid><description>&lt;h2 id="cluster-overview">Cluster Overview&lt;a class="td-heading-self-link" href="#cluster-overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The Prometheus cluster features a modern architecture optimized for deep learning workloads with high-performance GPUs, abundant memory, and fast storage systems.&lt;/p>
+&lt;h2 id="head-node">Head Node&lt;a class="td-heading-self-link" href="#head-node" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>Management and login node for the cluster&lt;/strong>&lt;/p>
+&lt;h3 id="hardware-configuration">Hardware Configuration&lt;a class="td-heading-self-link" href="#hardware-configuration" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Chassis&lt;/strong>: GIGABYTE R182-Z90-00&lt;/li>
+&lt;li>&lt;strong>Motherboard&lt;/strong>: GIGABYTE MZ92-FS0-00&lt;/li>
+&lt;li>&lt;strong>CPU&lt;/strong>: 2× AMD EPYC 7313 (16 cores/32 threads each)&lt;/li>
+&lt;li>&lt;strong>Total CPU Cores&lt;/strong>: 32 cores / 64 threads&lt;/li>
+&lt;li>&lt;strong>RAM&lt;/strong>: 16× 32GB Samsung M393A4K40EB3-CWE&lt;/li>
+&lt;li>&lt;strong>Total RAM&lt;/strong>: 512GB DDR4&lt;/li>
+&lt;li>&lt;strong>Storage&lt;/strong>: 2× 1.92TB Intel SSDSC2KB019T8 SSD&lt;/li>
+&lt;li>&lt;strong>File System&lt;/strong>: &lt;code>/trinity/home&lt;/code> (400GB allocated)&lt;/li>
+&lt;/ul>
+&lt;h3 id="purpose">Purpose&lt;a class="td-heading-self-link" href="#purpose" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>SSH login and job submission&lt;/li>
+&lt;li>File management and transfers&lt;/li>
+&lt;li>SLURM job scheduling&lt;/li>
+&lt;li>&lt;strong>Not for compute workloads&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h2 id="compute-nodes">Compute Nodes&lt;a class="td-heading-self-link" href="#compute-nodes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="gpu-nodes-gpu01-08-8-nodes">GPU Nodes &lt;code>gpu[01-08]&lt;/code> (8 nodes)&lt;a class="td-heading-self-link" href="#gpu-nodes-gpu01-08-8-nodes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>&lt;strong>Primary compute nodes with NVIDIA A5000 GPUs&lt;/strong>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quotas on Prometheus</title><link>https://marios2019.github.io/prometheus_docs/tags/quotas/</link><description>Recent content in Quotas on Prometheus</description><generator>Hugo</generator><language>en</language><atom:link href="https://marios2019.github.io/prometheus_docs/tags/quotas/index.xml" rel="self" type="application/rss+xml"/><item><title>Storage Systems</title><link>https://marios2019.github.io/prometheus_docs/docs/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/storage/</guid><description>&lt;h2 id="storage-overview">Storage Overview&lt;a class="td-heading-self-link" href="#storage-overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The Prometheus cluster provides multiple storage systems optimized for different use cases, from personal files to high-performance parallel computing workloads.&lt;/p>
+&lt;h2 id="storage-architecture">Storage Architecture&lt;a class="td-heading-self-link" href="#storage-architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="home-directories-trinityhome">Home Directories (&lt;code>/trinity/home/&lt;/code>)&lt;a class="td-heading-self-link" href="#home-directories-trinityhome" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Type&lt;/strong>: SSD-backed storage&lt;/li>
+&lt;li>&lt;strong>Mount point&lt;/strong>: &lt;code>/trinity/home/&amp;lt;username&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Quota&lt;/strong>: 20GB per user&lt;/li>
+&lt;li>&lt;strong>Purpose&lt;/strong>: Personal configuration files, small scripts&lt;/li>
+&lt;li>&lt;strong>Backup&lt;/strong>: Regular backups maintained&lt;/li>
+&lt;li>&lt;strong>Performance&lt;/strong>: Fast random I/O, moderate capacity&lt;/li>
+&lt;/ul>
+&lt;h3 id="shared-group-storage-lustrefsdata">Shared Group Storage (&lt;code>/lustreFS/data/&lt;/code>)&lt;a class="td-heading-self-link" href="#shared-group-storage-lustrefsdata" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Type&lt;/strong>: Lustre parallel file system&lt;/li>
+&lt;li>&lt;strong>Mount point&lt;/strong>: &lt;code>/lustreFS/data/&amp;lt;group-name&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Quota&lt;/strong>: 30TB per group (or 20,971,520 files)&lt;/li>
+&lt;li>&lt;strong>Purpose&lt;/strong>: Primary workspace for research data and results&lt;/li>
+&lt;li>&lt;strong>Performance&lt;/strong>: High-throughput parallel I/O&lt;/li>
+&lt;li>&lt;strong>Shared&lt;/strong>: All group members have access&lt;/li>
+&lt;/ul>
+&lt;h3 id="local-node-storage">Local Node Storage&lt;a class="td-heading-self-link" href="#local-node-storage" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Type&lt;/strong>: NVMe SSD (1TB per compute node)&lt;/li>
+&lt;li>&lt;strong>Purpose&lt;/strong>: Temporary files during job execution&lt;/li>
+&lt;li>&lt;strong>Access&lt;/strong>: Only available during allocated jobs&lt;/li>
+&lt;li>&lt;strong>Performance&lt;/strong>: Highest IOPS for temporary data&lt;/li>
+&lt;/ul>
+&lt;h2 id="file-system-details">File System Details&lt;a class="td-heading-self-link" href="#file-system-details" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="home-directory-usage">Home Directory Usage&lt;a class="td-heading-self-link" href="#home-directory-usage" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+
+
+&lt;div class="alert alert-warning" role="alert">
+&lt;h4 class="alert-heading">Quota Limit&lt;/h4>
+
+ Home directories have a strict &lt;strong>20GB limit&lt;/strong>. Use them only for configuration files, not data or models.
+
+&lt;/div>
+
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Check your home directory quota&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>quota -us
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># View home directory contents&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ls -la /trinity/home/&lt;span style="color:#000">$USER&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Typical home directory structure&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>/trinity/home/username/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── .bashrc &lt;span style="color:#8f5902;font-style:italic"># Shell configuration&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── .ssh/ &lt;span style="color:#8f5902;font-style:italic"># SSH keys and config&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── .jupyter/ &lt;span style="color:#8f5902;font-style:italic"># Jupyter configuration&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── .conda/ &lt;span style="color:#8f5902;font-style:italic"># Conda configuration&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── scripts/ &lt;span style="color:#8f5902;font-style:italic"># Small utility scripts&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── .local/ &lt;span style="color:#8f5902;font-style:italic"># Local Python packages&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Best practices for home directories&lt;/strong>:&lt;/p></description></item></channel></rss>

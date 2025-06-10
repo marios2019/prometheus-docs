@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getting-Started on Prometheus</title><link>https://marios2019.github.io/prometheus_docs/categories/getting-started/</link><description>Recent content in Getting-Started on Prometheus</description><generator>Hugo</generator><language>en</language><atom:link href="https://marios2019.github.io/prometheus_docs/categories/getting-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started</title><link>https://marios2019.github.io/prometheus_docs/docs/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/getting-started/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Before accessing the Prometheus cluster, you need:&lt;/p>
+&lt;ul>
+&lt;li>A valid cluster account (contact your MRG leader)&lt;/li>
+&lt;li>SSH client installed on your local machine&lt;/li>
+&lt;li>Basic familiarity with Linux command line&lt;/li>
+&lt;/ul>
+&lt;h2 id="generate-ssh-keys">Generate SSH Keys&lt;a class="td-heading-self-link" href="#generate-ssh-keys" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The Prometheus cluster uses &lt;strong>RSA key authentication&lt;/strong> for secure access. You need to generate a public/private key pair:&lt;/p>
+&lt;h3 id="step-1-create-ssh-key-pair">Step 1: Create SSH Key Pair&lt;a class="td-heading-self-link" href="#step-1-create-ssh-key-pair" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Open your terminal and run:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh-keygen
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Follow the on-screen instructions. This creates:&lt;/p></description></item><item><title>Environment Setup</title><link>https://marios2019.github.io/prometheus_docs/docs/environment-setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/environment-setup/</guid><description>&lt;h2 id="development-environment-options">Development Environment Options&lt;a class="td-heading-self-link" href="#development-environment-options" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The Prometheus cluster supports multiple development environments:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Container-based&lt;/strong> (Recommended)&lt;/li>
+&lt;li>&lt;strong>Module-based&lt;/strong> (Traditional HPC)&lt;/li>
+&lt;li>&lt;strong>Custom Python environments&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;h2 id="container-based-setup">Container-Based Setup&lt;a class="td-heading-self-link" href="#container-based-setup" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="using-pre-built-containers">Using Pre-built Containers&lt;a class="td-heading-self-link" href="#using-pre-built-containers" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>The cluster provides optimized containers for common deep learning frameworks:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># List available containers&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ls /shared/containers/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Use PyTorch container&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>singularity shell --nv /shared/containers/pytorch-gpu.sif
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Use TensorFlow container&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>singularity shell --nv /shared/containers/tensorflow-gpu.sif
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="building-custom-containers">Building Custom Containers&lt;a class="td-heading-self-link" href="#building-custom-containers" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Create a definition file (&lt;code>pytorch-custom.def&lt;/code>):&lt;/p></description></item></channel></rss>

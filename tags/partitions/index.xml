@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Partitions on Prometheus</title><link>https://marios2019.github.io/prometheus_docs/tags/partitions/</link><description>Recent content in Partitions on Prometheus</description><generator>Hugo</generator><language>en</language><atom:link href="https://marios2019.github.io/prometheus_docs/tags/partitions/index.xml" rel="self" type="application/rss+xml"/><item><title>Partitions &amp; Queues</title><link>https://marios2019.github.io/prometheus_docs/docs/partitions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/partitions/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The Prometheus cluster has &lt;strong>two partitions&lt;/strong> with different priority queues (QoS) that control resource limits and scheduling priority. All limits are applied &lt;strong>per group&lt;/strong>, and the default time limit is &lt;strong>4 hours&lt;/strong> for all partitions.&lt;/p>
+&lt;h2 id="partition-architecture">Partition Architecture&lt;a class="td-heading-self-link" href="#partition-architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="defq-partition-default">&lt;code>defq&lt;/code> Partition (Default)&lt;a class="td-heading-self-link" href="#defq-partition-default" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Nodes&lt;/strong>: 8 compute nodes (&lt;code>gpu[01-08]&lt;/code>)&lt;/li>
+&lt;li>&lt;strong>GPU Type&lt;/strong>: NVIDIA A5000 (24GB VRAM each)&lt;/li>
+&lt;li>&lt;strong>Total GPUs&lt;/strong>: 64 (8 GPUs per node)&lt;/li>
+&lt;li>&lt;strong>Default partition&lt;/strong>: Jobs submitted without specifying partition go here&lt;/li>
+&lt;/ul>
+&lt;h3 id="a6000-partition">&lt;code>a6000&lt;/code> Partition&lt;a class="td-heading-self-link" href="#a6000-partition" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Nodes&lt;/strong>: 1 compute node (&lt;code>gpu09&lt;/code>)&lt;/li>
+&lt;li>&lt;strong>GPU Type&lt;/strong>: NVIDIA RTX A6000 Ada Generation (48GB VRAM each)&lt;/li>
+&lt;li>&lt;strong>Total GPUs&lt;/strong>: 4&lt;/li>
+&lt;li>&lt;strong>Use case&lt;/strong>: High-memory GPU workloads&lt;/li>
+&lt;/ul>
+&lt;h2 id="priority-queues-qos">Priority Queues (QoS)&lt;a class="td-heading-self-link" href="#priority-queues-qos" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+
+
+&lt;div class="alert alert-info" role="alert">
+&lt;h4 class="alert-heading">Resource Limits&lt;/h4>
+
+ All resource limits are applied &lt;strong>per group&lt;/strong>, not per user. Coordinate with your group members to avoid conflicts.
+
+&lt;/div>
+
+&lt;h3 id="defq-partition-queues">&lt;code>defq&lt;/code> Partition Queues&lt;a class="td-heading-self-link" href="#defq-partition-queues" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table class="table table-striped">
+&lt;thead>
+&lt;tr>
+&lt;th>Priority Queue&lt;/th>
+&lt;th>Time Limit&lt;/th>
+&lt;th>Max CPUs&lt;/th>
+&lt;th>Max GPUs&lt;/th>
+&lt;th>Max RAM&lt;/th>
+&lt;th>Max Jobs&lt;/th>
+&lt;th>Priority&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>normal&lt;/code>&lt;/td>
+&lt;td>1 day&lt;/td>
+&lt;td>384&lt;/td>
+&lt;td>48&lt;/td>
+&lt;td>3TB&lt;/td>
+&lt;td>30&lt;/td>
+&lt;td>High&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>long&lt;/code>&lt;/td>
+&lt;td>7 days&lt;/td>
+&lt;td>384&lt;/td>
+&lt;td>48&lt;/td>
+&lt;td>3TB&lt;/td>
+&lt;td>20&lt;/td>
+&lt;td>Medium&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>preemptive&lt;/code>&lt;/td>
+&lt;td>Infinite&lt;/td>
+&lt;td>All*&lt;/td>
+&lt;td>All*&lt;/td>
+&lt;td>All*&lt;/td>
+&lt;td>10&lt;/td>
+&lt;td>Low&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="a6000-partition-queues">&lt;code>a6000&lt;/code> Partition Queues&lt;a class="td-heading-self-link" href="#a6000-partition-queues" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table class="table table-striped">
+&lt;thead>
+&lt;tr>
+&lt;th>Priority Queue&lt;/th>
+&lt;th>Time Limit&lt;/th>
+&lt;th>Max CPUs&lt;/th>
+&lt;th>Max GPUs&lt;/th>
+&lt;th>Max RAM&lt;/th>
+&lt;th>Max Jobs&lt;/th>
+&lt;th>Priority&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>normal-a6000&lt;/code>&lt;/td>
+&lt;td>1 day&lt;/td>
+&lt;td>48&lt;/td>
+&lt;td>3&lt;/td>
+&lt;td>384GB&lt;/td>
+&lt;td>6&lt;/td>
+&lt;td>High&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>long-a6000&lt;/code>&lt;/td>
+&lt;td>7 days&lt;/td>
+&lt;td>48&lt;/td>
+&lt;td>3&lt;/td>
+&lt;td>384GB&lt;/td>
+&lt;td>4&lt;/td>
+&lt;td>Medium&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>preemptive-a6000&lt;/code>&lt;/td>
+&lt;td>Infinite&lt;/td>
+&lt;td>All*&lt;/td>
+&lt;td>All*&lt;/td>
+&lt;td>All*&lt;/td>
+&lt;td>2&lt;/td>
+&lt;td>Low&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>* &lt;strong>Preemptive queues&lt;/strong> can use all available resources but jobs may be automatically terminated when higher-priority jobs need resources.&lt;/p></description></item></channel></rss>

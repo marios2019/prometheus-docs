@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Documentation on Prometheus</title><link>https://marios2019.github.io/prometheus_docs/tags/documentation/</link><description>Recent content in Documentation on Prometheus</description><generator>Hugo</generator><language>en</language><atom:link href="https://marios2019.github.io/prometheus_docs/tags/documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Prometheus Cluster Documentation</title><link>https://marios2019.github.io/prometheus_docs/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/</guid><description>&lt;div class="pageinfo pageinfo-primary">
+&lt;p>This section contains comprehensive documentation for the Prometheus cluster - a high-performance computing environment for deep learning research at CYENS.&lt;/p>
+
+&lt;/div>
+
+&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The Prometheus cluster is a state-of-the-art deep learning computing facility featuring:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>64 NVIDIA A5000 GPUs&lt;/strong> (24GB each) across 8 compute nodes&lt;/li>
+&lt;li>&lt;strong>4 NVIDIA A6000 Ada GPUs&lt;/strong> (48GB each) on a dedicated node&lt;/li>
+&lt;li>&lt;strong>4.6TB total GPU memory&lt;/strong> for large-scale model training&lt;/li>
+&lt;li>&lt;strong>High-performance Lustre storage&lt;/strong> with 305TB capacity&lt;/li>
+&lt;li>&lt;strong>SLURM job scheduler&lt;/strong> for efficient resource management&lt;/li>
+&lt;/ul>
+&lt;p>This documentation will guide you through:&lt;/p></description></item></channel></rss>
