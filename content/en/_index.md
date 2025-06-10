@@ -4,7 +4,7 @@ tags: ["prometheus", "deep-learning", "cluster", "gpu-computing", "hpc", "nvidia
 categories: ["cluster-computing", "documentation"]
 ---
 
-{{< blocks/cover title="" image_anchor="top" height="full" >}}
+{{< blocks/cover title="" image_anchor="middle" height="full" >}}
 <div class="text-center mb-4">
 <pre class="ascii-art" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.6), rgba(0, 86, 179, 0.7)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; margin: 0; font-size: 0.8em; line-height: 1.2; font-family: 'Courier New', monospace;">
    ________  ________  ________  _____ ______   _______  _________  ___  ___  _______   ___  ___  ________        
