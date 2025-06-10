@@ -33,7 +33,7 @@ High-Performance GPU Computing Cluster at CYENS Centre of Excellence
 
 
 {{% blocks/lead color="primary" %}}
-Prometheus is CYENS's flagship deep learning cluster, featuring powerful NVIDIA GPUs, 
+Prometheus is <a href="https://cyens.org.cy/">CYENS's</a> flagship deep learning cluster, featuring powerful NVIDIA GPUs, 
 AMD EPYC processors, and high-performance Lustre storage. Running Rocky Linux with Slurm job scheduling, 
 it provides researchers with the computational resources needed for cutting-edge AI and machine learning research.
 
