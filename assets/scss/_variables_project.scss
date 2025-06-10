@@ -64,10 +64,7 @@
 
 // Enhanced navbar links visibility (right side navigation)
 .td-navbar .navbar-nav {
-  background: rgba(255, 255, 255, 0.05) !important;
-  border-radius: 8px !important;
   padding: 8px 12px !important;
-  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1) !important;
 }
 
 .td-navbar .nav-link {
@@ -78,24 +75,20 @@
   padding: 8px 16px !important;
   margin: 0 4px !important;
   border-radius: 6px !important;
-  background: rgba(255, 255, 255, 0.08) !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
 }
 
 .td-navbar .nav-link:hover {
   color: #e3f2fd !important;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9) !important;
-  background: rgba(255, 255, 255, 0.2) !important;
-  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
   transform: translateY(-1px) !important;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
 .td-navbar .nav-link:focus {
   color: #e3f2fd !important;
   outline: 3px solid rgba(227, 242, 253, 0.6) !important;
   outline-offset: 2px !important;
-  background: rgba(255, 255, 255, 0.25) !important;
+  background: rgba(255, 255, 255, 0.15) !important;
 }
 
 // Enhanced navbar brand visibility (left side)
@@ -104,30 +97,23 @@
   font-weight: 700 !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6) !important;
   padding: 8px 16px !important;
-  background: rgba(255, 255, 255, 0.08) !important;
-  border-radius: 8px !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
 }
 
 .td-navbar .navbar-brand:hover {
   color: #e3f2fd !important;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8) !important;
-  background: rgba(255, 255, 255, 0.15) !important;
-  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
 }
 
 // Enhanced search box visibility (typically on right side)
 .td-navbar .td-search {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border: 2px solid rgba(255, 255, 255, 0.3) !important;
-  border-radius: 8px !important;
   padding: 4px !important;
 }
 
 .td-navbar .td-search input {
   background: rgba(255, 255, 255, 0.9) !important;
   color: #333 !important;
-  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
   border-radius: 6px !important;
   font-weight: 500 !important;
   padding: 8px 12px !important;
@@ -148,7 +134,7 @@
 // Enhanced dropdown visibility (right side menus)
 .td-navbar .dropdown-menu {
   background: #2c5aa0 !important;
-  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5) !important;
   border-radius: 8px !important;
   margin-top: 8px !important;
@@ -173,15 +159,12 @@
 
 // Right-side navbar utilities enhancement
 .td-navbar .navbar-nav .nav-item:last-child .nav-link {
-  background: rgba(255, 255, 255, 0.12) !important;
-  border: 2px solid rgba(255, 255, 255, 0.25) !important;
   font-weight: 700 !important;
 }
 
 .td-navbar .navbar-nav .nav-item:last-child .nav-link:hover {
-  background: rgba(255, 255, 255, 0.25) !important;
-  border: 2px solid rgba(255, 255, 255, 0.5) !important;
-  transform: scale(1.05) !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  transform: scale(1.02) !important;
 }
 
 // Mobile navbar improvements (right side collapse menu)
@@ -191,10 +174,8 @@
     opacity: 1 !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
   }
-  
-  .td-navbar .navbar-collapse {
+    .td-navbar .navbar-collapse {
     background: linear-gradient(135deg, #2c5aa0 0%, #30638e 100%) !important;
-    border: 2px solid rgba(255, 255, 255, 0.2) !important;
     border-radius: 12px !important;
     margin-top: 10px !important;
     padding: 20px !important;
@@ -208,25 +189,22 @@
   
   .td-navbar .nav-link {
     margin: 4px 0 !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
   }
 }
 
 // Navbar toggle button enhancement (right side mobile)
 .td-navbar .navbar-toggler {
-  border: 3px solid rgba(255, 255, 255, 0.6) !important;
-  background: rgba(255, 255, 255, 0.15) !important;
+  border: 2px solid rgba(255, 255, 255, 0.4) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
   border-radius: 8px !important;
   padding: 8px 12px !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
 .td-navbar .navbar-toggler:hover {
-  background: rgba(255, 255, 255, 0.25) !important;
-  border-color: rgba(255, 255, 255, 0.9) !important;
-  transform: scale(1.05) !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.7) !important;
+  transform: scale(1.02) !important;
 }
 
 .td-navbar .navbar-toggler:focus {
