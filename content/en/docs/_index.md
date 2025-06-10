@@ -1,28 +1,72 @@
 ---
-title: Documentation
-linkTitle: Docs
-menu: {main: {weight: 20}}
+title: "Prometheus Cluster Documentation"
+linkTitle: "Docs"
+weight: 20
+menu:
+  main:
+    weight: 20
+description: >
+  Complete guide to using the Prometheus deep learning cluster at CYENS
+tags: ["cluster", "documentation", "deep-learning", "hpc", "prometheus", "gpu-computing"]
+categories: ["documentation", "cluster-computing"]
 ---
 
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+This section contains comprehensive documentation for the Prometheus cluster - a high-performance computing environment for deep learning research at CYENS.
 {{% /pageinfo %}}
 
-This section is where the user documentation for your project lives - all the
-information your users need to understand and successfully use your project.
+## Overview
 
-For large documentation sets we recommend adding content under the headings in
-this section, though if some or all of them don’t apply to your project feel
-free to remove them or add your own. You can see an example of a smaller Docsy
-documentation site in the [Docsy User Guide](https://docsy.dev/docs/), which
-lives in the [Docsy theme
-repo](https://github.com/google/docsy/tree/master/userguide) if you'd like to
-copy its docs section.
+The Prometheus cluster is a state-of-the-art deep learning computing facility featuring:
 
-Other content such as marketing material, case studies, and community updates
-should live in the [About](/about/) and [Community](/community/) pages.
+- **64 NVIDIA A5000 GPUs** (24GB each) across 8 compute nodes
+- **4 NVIDIA A6000 Ada GPUs** (48GB each) on a dedicated node
+- **4.6TB total GPU memory** for large-scale model training
+- **High-performance Lustre storage** with 305TB capacity
+- **SLURM job scheduler** for efficient resource management
 
-Find out how to use the Docsy theme in the [Docsy User
-Guide](https://docsy.dev/docs/). You can learn more about how to organize your
-documentation (and how we organized this site) in [Organizing Your
-Content](https://docsy.dev/docs/best-practices/organizing-content/).
+This documentation will guide you through:
+
+- **[Getting Started](getting-started/)** - SSH access and account setup
+- **[Hardware Specifications](hardware/)** - Detailed cluster architecture
+- **[Job Submission](job-submission/)** - SLURM batch and interactive jobs
+- **[Partitions & Queues](partitions/)** - Resource allocation policies
+- **[Storage Systems](storage/)** - File systems and quotas
+- **[Environment Modules](modules/)** - Software stack management
+- **[VS Code Setup](vscode/)** - Remote development environment
+- **[Software Installation](software/)** - Third-party libraries and tools
+
+## Quick Start
+
+1. **Generate SSH keys** and request cluster access
+2. **Connect via SSH** to `prometheus.cyens.org.cy`
+3. **Submit your first job** using SLURM
+4. **Set up development environment** with modules or containers
+
+## Cluster Specifications
+
+### Compute Resources
+- **9 compute nodes** total
+- **GPU nodes `gpu[01-08]`**: 8×A5000 GPUs each (64 total GPUs)
+- **GPU node `gpu09`**: 4×A6000 Ada GPUs (48GB VRAM each)
+- **512GB RAM** per compute node
+- **32 CPU cores** per node (AMD EPYC 7313)
+
+### Storage
+- **Home directories**: 20GB SSD per user
+- **Shared storage**: 30TB Lustre filesystem per group
+- **Local storage**: 1TB NVMe SSD per compute node
+
+### Software Environment
+- **Rocky Linux 8.5** operating system
+- **SLURM** workload manager
+- **Lmod** environment modules
+- **CUDA 11.3+** with deep learning frameworks
+
+## Support & Resources
+
+- **System administrators**: Contact your MRG leader
+- **Documentation**: This site and `/opt/cluster/docs/`
+- **Cluster status**: Monitor with `sinfo` and `squeue`
+
+For detailed instructions, start with the [Getting Started](getting-started/) guide.
