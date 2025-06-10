@@ -35,5 +35,5 @@ go.work.sum
 /public
 resources/
 node_modules/
-# package-lock.json
+package-lock.json
 .hugo_build.lock
