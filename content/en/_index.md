@@ -22,10 +22,10 @@ High-Performance GPU Computing Cluster at CYENS Centre of Excellence
 </p>
 </div>
 </div>
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
+<a class="btn btn-lg btn-primary me-3 mb-4" href="docs/">
   Get Started <i class="fas fa-rocket ms-2"></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="/docs/getting-started/">
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="docs/getting-started/">
   User Guide <i class="fas fa-book ms-2"></i>
 </a>
 {{< blocks/link-down color="info" >}}
@@ -131,10 +131,10 @@ Begin your research journey with enterprise-grade computing resources
 Ready to accelerate your research? Connect to Prometheus and start exploring the possibilities of high-performance GPU computing for your projects.
 
 <div class="text-center mt-4">
-<a class="btn btn-lg btn-light me-3 mb-4" href="/docs/getting-started/">
+<a class="btn btn-lg btn-light me-3 mb-4" href="docs/getting-started/">
   Quick Start Guide <i class="fas fa-play ms-2"></i>
 </a>
-<a class="btn btn-lg btn-outline-light me-3 mb-4" href="/docs/">
+<a class="btn btn-lg btn-outline-light me-3 mb-4" href="docs/">
   Full Documentation <i class="fas fa-book-open ms-2"></i>
 </a>
 </div>
