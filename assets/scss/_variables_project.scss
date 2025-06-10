@@ -1,6 +1,41 @@
-/*
+// Custom styles for Prometheus ASCII art and high contrast elements
+.ascii-art {
+  color: #ffffff !important;
+  font-weight: bold !important;
+  text-shadow: 0 0 10px #ffffff !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  border: 2px solid #ffffff !important;
+  font-family: 'Courier New', monospace !important;
+  font-size: 0.8em !important;
+  line-height: 1.2 !important;
+}
 
-Add styles or override variables from the theme here.
+.ascii-description {
+  color: white !important;
+  font-weight: bold !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  padding: 15px 25px !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(255,255,255,0.3) !important;
+  display: inline-block !important;
+  margin: 10px auto !important;
+}
 
-*/
+// Enhance visibility on cover blocks
+.td-cover-block {
+  .ascii-art, .ascii-description {
+    position: relative;
+    z-index: 10;
+  }
+}
 
+// Alternative color scheme for better contrast
+.ascii-art-alt {
+  color: #00ff00 !important;
+  background: rgba(0, 0, 0, 0.9) !important;
+  border: 2px solid #00ff00 !important;
+  text-shadow: 0 0 10px #00ff00 !important;
+}
