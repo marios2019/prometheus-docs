@@ -75,6 +75,11 @@ researchers with a robust, scalable platform for breakthrough AI research and de
 - **Storage System:** 24x 7.68TB Samsung SSDs
 - **Total Capacity:** 305TB Lustre parallel filesystem
 
+### Networking Infrastructure
+- **Management Switch:** Netgear M4300-52G - 48x1G Stackable Managed Switch with 2x10GBASE-T and 2xSFP+
+- **Interconnection Switch:** Mellanox HDR InfiniBand QM8700 Switch, 40x QSFP56 ports, 2 Power Supplies (AC), x86 dual core, standard depth, P2C airflow
+- **Interconnection Cables:** 11x Mellanox passive copper hybrid cable, IB HDR 200Gb/s to 2x100Gb/s, QSFP28 to 2xQSFP28, colored pulltabs, 2m, 26AWG
+
 {{% /blocks/section %}}
 
 {{% blocks/section color="dark" %}}
