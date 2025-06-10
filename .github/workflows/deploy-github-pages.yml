@@ -37,7 +37,7 @@ jobs:
           cache-dependency-path: '**/package-lock.json'
 
       - run: npm ci
-      - run: hugo --baseURL https://marios2019.github.io/prometheus_docs --minify
+      - run: hugo --baseURL https://marios2019.github.io/prometheus-docs/ --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
