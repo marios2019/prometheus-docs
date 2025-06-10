@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prometheus Deep Learning Cluster on Prometheus</title><link>https://marios2019.github.io/prometheus_docs/</link><description>Recent content in Prometheus Deep Learning Cluster on Prometheus</description><generator>Hugo</generator><language>en</language><atom:link href="https://marios2019.github.io/prometheus_docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started</title><link>https://marios2019.github.io/prometheus_docs/docs/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/getting-started/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prometheus Deep Learning Cluster on Prometheus</title><link>https://marios2019.github.io/prometheus-docs/</link><description>Recent content in Prometheus Deep Learning Cluster on Prometheus</description><generator>Hugo</generator><language>en</language><atom:link href="https://marios2019.github.io/prometheus-docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started</title><link>https://marios2019.github.io/prometheus-docs/docs/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus-docs/docs/getting-started/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Before accessing the Prometheus cluster, you need:&lt;/p>
 &lt;ul>
 &lt;li>A valid cluster account (contact your MRG leader)&lt;/li>
@@ -10,7 +10,7 @@
 &lt;h3 id="step-1-create-ssh-key-pair">Step 1: Create SSH Key Pair&lt;a class="td-heading-self-link" href="#step-1-create-ssh-key-pair" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;p>Open your terminal and run:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh-keygen
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Follow the on-screen instructions. This creates:&lt;/p></description></item><item><title>Hardware Specifications</title><link>https://marios2019.github.io/prometheus_docs/docs/hardware/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/hardware/</guid><description>&lt;h2 id="cluster-overview">Cluster Overview&lt;a class="td-heading-self-link" href="#cluster-overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Follow the on-screen instructions. This creates:&lt;/p></description></item><item><title>Hardware Specifications</title><link>https://marios2019.github.io/prometheus-docs/docs/hardware/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus-docs/docs/hardware/</guid><description>&lt;h2 id="cluster-overview">Cluster Overview&lt;a class="td-heading-self-link" href="#cluster-overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>The Prometheus cluster features a modern architecture optimized for deep learning workloads with high-performance GPUs, abundant memory, and fast storage systems.&lt;/p>
 &lt;h2 id="head-node">Head Node&lt;a class="td-heading-self-link" href="#head-node" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>&lt;strong>Management and login node for the cluster&lt;/strong>&lt;/p>
@@ -34,7 +34,7 @@
 &lt;/ul>
 &lt;h2 id="compute-nodes">Compute Nodes&lt;a class="td-heading-self-link" href="#compute-nodes" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;h3 id="gpu-nodes-gpu01-08-8-nodes">GPU Nodes &lt;code>gpu[01-08]&lt;/code> (8 nodes)&lt;a class="td-heading-self-link" href="#gpu-nodes-gpu01-08-8-nodes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>&lt;strong>Primary compute nodes with NVIDIA A5000 GPUs&lt;/strong>&lt;/p></description></item><item><title>Environment Setup</title><link>https://marios2019.github.io/prometheus_docs/docs/environment-setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/environment-setup/</guid><description>&lt;h2 id="development-environment-options">Development Environment Options&lt;a class="td-heading-self-link" href="#development-environment-options" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>Primary compute nodes with NVIDIA A5000 GPUs&lt;/strong>&lt;/p></description></item><item><title>Environment Setup</title><link>https://marios2019.github.io/prometheus-docs/docs/environment-setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus-docs/docs/environment-setup/</guid><description>&lt;h2 id="development-environment-options">Development Environment Options&lt;a class="td-heading-self-link" href="#development-environment-options" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>The Prometheus cluster supports multiple development environments:&lt;/p>
 &lt;ol>
 &lt;li>&lt;strong>Container-based&lt;/strong> (Recommended)&lt;/li>
@@ -53,7 +53,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Use TensorFlow container&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>singularity shell --nv /shared/containers/tensorflow-gpu.sif
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="building-custom-containers">Building Custom Containers&lt;a class="td-heading-self-link" href="#building-custom-containers" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>Create a definition file (&lt;code>pytorch-custom.def&lt;/code>):&lt;/p></description></item><item><title>Job Submission</title><link>https://marios2019.github.io/prometheus_docs/docs/job-submission/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/job-submission/</guid><description>&lt;h2 id="slurm-job-scheduler">SLURM Job Scheduler&lt;a class="td-heading-self-link" href="#slurm-job-scheduler" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Create a definition file (&lt;code>pytorch-custom.def&lt;/code>):&lt;/p></description></item><item><title>Job Submission</title><link>https://marios2019.github.io/prometheus-docs/docs/job-submission/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus-docs/docs/job-submission/</guid><description>&lt;h2 id="slurm-job-scheduler">SLURM Job Scheduler&lt;a class="td-heading-self-link" href="#slurm-job-scheduler" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>The Prometheus cluster uses &lt;strong>SLURM&lt;/strong> (Simple Linux Utility for Resource Management) for job scheduling and resource allocation. SLURM ensures fair resource sharing and efficient cluster utilization.&lt;/p>
 
 
@@ -65,7 +65,7 @@
 &lt;/div>
 
 &lt;h2 id="interactive-jobs">Interactive Jobs&lt;a class="td-heading-self-link" href="#interactive-jobs" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>Interactive jobs are perfect for development, testing, and debugging. Use &lt;code>srun&lt;/code> to request resources immediately.&lt;/p></description></item><item><title>Partitions &amp; Queues</title><link>https://marios2019.github.io/prometheus_docs/docs/partitions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/partitions/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Interactive jobs are perfect for development, testing, and debugging. Use &lt;code>srun&lt;/code> to request resources immediately.&lt;/p></description></item><item><title>Partitions &amp; Queues</title><link>https://marios2019.github.io/prometheus-docs/docs/partitions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus-docs/docs/partitions/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>The Prometheus cluster has &lt;strong>two partitions&lt;/strong> with different priority queues (QoS) that control resource limits and scheduling priority. All limits are applied &lt;strong>per group&lt;/strong>, and the default time limit is &lt;strong>4 hours&lt;/strong> for all partitions.&lt;/p>
 &lt;h2 id="partition-architecture">Partition Architecture&lt;a class="td-heading-self-link" href="#partition-architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;h3 id="defq-partition-default">&lt;code>defq&lt;/code> Partition (Default)&lt;a class="td-heading-self-link" href="#defq-partition-default" aria-label="Heading self-link">&lt;/a>&lt;/h3>
@@ -178,7 +178,7 @@
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>* &lt;strong>Preemptive queues&lt;/strong> can use all available resources but jobs may be automatically terminated when higher-priority jobs need resources.&lt;/p></description></item><item><title>Storage Systems</title><link>https://marios2019.github.io/prometheus_docs/docs/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/storage/</guid><description>&lt;h2 id="storage-overview">Storage Overview&lt;a class="td-heading-self-link" href="#storage-overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>* &lt;strong>Preemptive queues&lt;/strong> can use all available resources but jobs may be automatically terminated when higher-priority jobs need resources.&lt;/p></description></item><item><title>Storage Systems</title><link>https://marios2019.github.io/prometheus-docs/docs/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus-docs/docs/storage/</guid><description>&lt;h2 id="storage-overview">Storage Overview&lt;a class="td-heading-self-link" href="#storage-overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>The Prometheus cluster provides multiple storage systems optimized for different use cases, from personal files to high-performance parallel computing workloads.&lt;/p>
 &lt;h2 id="storage-architecture">Storage Architecture&lt;a class="td-heading-self-link" href="#storage-architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;h3 id="home-directories-trinityhome">Home Directories (&lt;code>/trinity/home/&lt;/code>)&lt;a class="td-heading-self-link" href="#home-directories-trinityhome" aria-label="Heading self-link">&lt;/a>&lt;/h3>
@@ -231,7 +231,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── .conda/ &lt;span style="color:#8f5902;font-style:italic"># Conda configuration&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── scripts/ &lt;span style="color:#8f5902;font-style:italic"># Small utility scripts&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── .local/ &lt;span style="color:#8f5902;font-style:italic"># Local Python packages&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Best practices for home directories&lt;/strong>:&lt;/p></description></item><item><title>Environment Modules</title><link>https://marios2019.github.io/prometheus_docs/docs/modules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/modules/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Best practices for home directories&lt;/strong>:&lt;/p></description></item><item><title>Environment Modules</title><link>https://marios2019.github.io/prometheus-docs/docs/modules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus-docs/docs/modules/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>The Prometheus cluster uses &lt;strong>Lmod&lt;/strong> (Lua-based Environment Modules) to manage software packages and their dependencies. This system allows you to easily load and unload different software versions without conflicts.&lt;/p>
 &lt;h2 id="module-system-basics">Module System Basics&lt;a class="td-heading-self-link" href="#module-system-basics" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Environment modules modify your shell environment to provide access to specific software packages. When you load a module, it typically:&lt;/p>
@@ -312,7 +312,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># HDF5 for data storage&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>module load HDF5/1.12.2
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="module-dependencies">Module Dependencies&lt;a class="td-heading-self-link" href="#module-dependencies" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>Lmod automatically handles dependencies. When you load a module, it loads required dependencies:&lt;/p></description></item><item><title>VS Code Remote Development</title><link>https://marios2019.github.io/prometheus_docs/docs/vscode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/vscode/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Lmod automatically handles dependencies. When you load a module, it loads required dependencies:&lt;/p></description></item><item><title>VS Code Remote Development</title><link>https://marios2019.github.io/prometheus-docs/docs/vscode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus-docs/docs/vscode/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Visual Studio Code provides excellent remote development capabilities for the Prometheus cluster. You can edit code, run Jupyter notebooks, and debug applications directly on the cluster while using your local VS Code interface.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ul>
@@ -322,7 +322,7 @@
 &lt;li>&lt;strong>Valid cluster account&lt;/strong> with SSH keys configured&lt;/li>
 &lt;/ul>
 &lt;h2 id="install-required-extensions">Install Required Extensions&lt;a class="td-heading-self-link" href="#install-required-extensions" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>Install these essential VS Code extensions:&lt;/p></description></item><item><title>Software Installation</title><link>https://marios2019.github.io/prometheus_docs/docs/software/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/docs/software/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Install these essential VS Code extensions:&lt;/p></description></item><item><title>Software Installation</title><link>https://marios2019.github.io/prometheus-docs/docs/software/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus-docs/docs/software/</guid><description>&lt;h2 id="overview">Overview&lt;a class="td-heading-self-link" href="#overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>The Prometheus cluster provides several methods for installing and managing software packages. This guide covers both system-wide modules and user-specific installations.&lt;/p>
 &lt;h2 id="installation-methods">Installation Methods&lt;a class="td-heading-self-link" href="#installation-methods" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;h3 id="1-environment-modules-recommended">1. Environment Modules (Recommended)&lt;a class="td-heading-self-link" href="#1-environment-modules-recommended" aria-label="Heading self-link">&lt;/a>&lt;/h3>
@@ -333,15 +333,15 @@
 &lt;p>Install packages in isolated environments:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>conda install pytorch torchvision torchaudio pytorch-cuda&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>11.7 -c pytorch -c nvidia
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="3-pip-package-manager">3. pip Package Manager&lt;a class="td-heading-self-link" href="#3-pip-package-manager" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>Install Python packages via pip:&lt;/p></description></item><item><title>About Prometheus Cluster</title><link>https://marios2019.github.io/prometheus_docs/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/about/</guid><description>&lt;link rel="preload" as="image" href="https://marios2019.github.io/prometheus_docs/about/background_hu_3acffa24aee29d0.jpg" media="(max-width: 1200px)">
-&lt;link rel="preload" as="image" href="https://marios2019.github.io/prometheus_docs/about/background_hu_cbea8e4fbc198c39.jpg" media="(min-width: 1200px)">
+&lt;p>Install Python packages via pip:&lt;/p></description></item><item><title>About Prometheus Cluster</title><link>https://marios2019.github.io/prometheus-docs/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus-docs/about/</guid><description>&lt;link rel="preload" as="image" href="https://marios2019.github.io/prometheus-docs/about/background_hu_3acffa24aee29d0.jpg" media="(max-width: 1200px)">
+&lt;link rel="preload" as="image" href="https://marios2019.github.io/prometheus-docs/about/background_hu_cbea8e4fbc198c39.jpg" media="(min-width: 1200px)">
 &lt;style>
 #td-cover-block-0 {
- background-image: url(/prometheus_docs/about/background_hu_3acffa24aee29d0.jpg);
+ background-image: url(/prometheus-docs/about/background_hu_3acffa24aee29d0.jpg);
 }
 @media only screen and (min-width: 1200px) {
  #td-cover-block-0 {
- background-image: url(/prometheus_docs/about/background_hu_cbea8e4fbc198c39.jpg);
+ background-image: url(/prometheus-docs/about/background_hu_cbea8e4fbc198c39.jpg);
  }
 }
 &lt;/style>
@@ -367,4 +367,4 @@
 &lt;div style="margin-top: 20px;">
 &lt;p class="lead ascii-description" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.9)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; font-size: 1.1em;">
 High-Performance GPU Computing Cluster at CYENS Centre of Excellence
-&lt;/p></description></item><item><title>Search Results</title><link>https://marios2019.github.io/prometheus_docs/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus_docs/search/</guid><description/></item></channel></rss>
+&lt;/p></description></item><item><title>Search Results</title><link>https://marios2019.github.io/prometheus-docs/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus-docs/search/</guid><description/></item></channel></rss>
