@@ -81,9 +81,19 @@ params:
     taxonomyPageHeader: [tags, categories]
 
   # privacy_policy: https://policies.google.com/privacy
-
   # First one is picked as the Twitter card image if not set on page.
-  # images: [images/project-illustration.png]
+  images: ["/icons/background.jpg"]
+
+  # Social media and link unfurling settings
+  description: "High-Performance GPU Computing Cluster at CYENS Centre of Excellence - Advanced NVIDIA GPUs, AMD EPYC processors, and Lustre storage for AI research"
+  
+  # Open Graph / Social Media settings
+  social:
+    twitter: "@CYENS_CoE"  # Update with actual Twitter handle if available
+    
+  # SEO and social sharing
+  author: "CYENS Centre of Excellence"
+  keywords: ["deep learning", "GPU computing", "HPC", "NVIDIA", "research cluster", "AI", "machine learning"]
 
   # Menu title if your navbar has a versions selector to access old versions of your site.
   # This menu appears only if you have at least one [params.versions] set.
