@@ -5,21 +5,23 @@ categories: ["cluster-computing", "documentation"]
 ---
 
 {{< blocks/cover title="" image_anchor="top" height="full" >}}
-<pre class="ascii-art">
-+------------------------------------------------------------------------------------------------------------------+
-|                                                                                                                  |
-|   ________  ________  ________  _____ ______   _______  _________  ___  ___  _______   ___  ___  ________        |
-|  |\   __  \|\   __  \|\   __  \|\   _ \  _   \|\  ___ \|\___   ___\\  \|\  \|\  ___ \ |\  \|\  \|\   ____\       |
-|  \ \  \|\  \ \  \|\  \ \  \|\  \ \  \\\__\ \  \ \   __/\|___ \  \_\ \  \\\  \ \   __/|\ \  \\\  \ \  \___|_      |
-|   \ \   ____\ \   _  _\ \  \\\  \ \  \\|__| \  \ \  \_|/__  \ \  \ \ \   __  \ \  \_|/_\ \  \\\  \ \_____  \     |
-|    \ \  \___|\ \  \\  \\ \  \\\  \ \  \    \ \  \ \  \_|\ \  \ \  \ \ \  \ \  \ \  \_|\ \ \  \\\  \|____|\  \    |
-|     \ \__\    \ \__\\ _\\ \_______\ \__\    \ \__\ \_______\  \ \__\ \ \__\ \__\ \_______\ \_______\____\_\  \   |
-|      \|__|     \|__|\|__|\|_______|\|__|     \|__|\|_______|   \|__|  \|__|\|__|\|_______|\|_______|\_________\  |
-|                                                                                                    \|_________|  |
-|                                                                                                                  |
-+------------------------------------------------------------------------------------------------------------------+
+<div class="text-center mb-4">
+<pre class="ascii-art" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.6), rgba(0, 86, 179, 0.7)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; margin: 0; font-size: 0.8em; line-height: 1.2; font-family: 'Courier New', monospace;">
+   ________  ________  ________  _____ ______   _______  _________  ___  ___  _______   ___  ___  ________        
+  |\   __  \|\   __  \|\   __  \|\   _ \  _   \|\  ___ \|\___   ___\\  \|\  \|\  ___ \ |\  \|\  \|\   ____\       
+  \ \  \|\  \ \  \|\  \ \  \|\  \ \  \\\__\ \  \ \   __/\|___ \  \_\ \  \\\  \ \   __/|\ \  \\\  \ \  \___|_      
+   \ \   ____\ \   _  _\ \  \\\  \ \  \\|__| \  \ \  \_|/__  \ \  \ \ \   __  \ \  \_|/_\ \  \\\  \ \_____  \     
+    \ \  \___|\ \  \\  \\ \  \\\  \ \  \    \ \  \ \  \_|\ \  \ \  \ \ \  \ \  \ \  \_|\ \ \  \\\  \|____|\  \    
+     \ \__\    \ \__\\ _\\ \_______\ \__\    \ \__\ \_______\  \ \__\ \ \__\ \__\ \_______\ \_______\____\_\  \   
+      \|__|     \|__|\|__|\|_______|\|__|     \|__|\|_______|   \|__|  \|__|\|__|\|_______|\|_______|\_________\  
+                                                                                                   \|_________|  
 </pre>
-<p class="lead mt-3 ascii-description">High-Performance GPU Computing Cluster at CYENS Centre of Excellence</p>
+<div style="margin-top: 20px;">
+<p class="lead ascii-description" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.9)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; font-size: 1.1em;">
+High-Performance GPU Computing Cluster at CYENS Centre of Excellence
+</p>
+</div>
+</div>
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
   Get Started <i class="fas fa-rocket ms-2"></i>
 </a>
