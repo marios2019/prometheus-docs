@@ -58,15 +58,15 @@
 &lt;div style="margin-top: 20px;">
 &lt;p class="lead ascii-description" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.9)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; font-size: 1.1em;">
 High-Performance GPU Computing Cluster at CYENS Centre of Excellence
-&lt;/p></description></item><item><title>Prometheus Deep Learning Cluster</title><link>https://marios2019.github.io/prometheus-docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus-docs/</guid><description>&lt;link rel="preload" as="image" href="https://marios2019.github.io/prometheus-docs/background_hu_44063d47ab0ba17a.jpg" media="(max-width: 1200px)">
-&lt;link rel="preload" as="image" href="https://marios2019.github.io/prometheus-docs/background_hu_f7899ce16370f62b.jpg" media="(min-width: 1200px)">
+&lt;/p></description></item><item><title>Prometheus Deep Learning Cluster</title><link>https://marios2019.github.io/prometheus-docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://marios2019.github.io/prometheus-docs/</guid><description>&lt;link rel="preload" as="image" href="https://marios2019.github.io/prometheus-docs/background_hu_4147385d58e62359.jpg" media="(max-width: 1200px)">
+&lt;link rel="preload" as="image" href="https://marios2019.github.io/prometheus-docs/background_hu_243bf32fd2112589.jpg" media="(min-width: 1200px)">
 &lt;style>
 #td-cover-block-0 {
- background-image: url(/prometheus-docs/background_hu_44063d47ab0ba17a.jpg);
+ background-image: url(/prometheus-docs/background_hu_4147385d58e62359.jpg);
 }
 @media only screen and (min-width: 1200px) {
  #td-cover-block-0 {
- background-image: url(/prometheus-docs/background_hu_f7899ce16370f62b.jpg);
+ background-image: url(/prometheus-docs/background_hu_243bf32fd2112589.jpg);
  }
 }
 &lt;/style>
