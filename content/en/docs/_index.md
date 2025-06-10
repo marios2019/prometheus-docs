@@ -57,6 +57,12 @@ This documentation will guide you through:
 - **Shared storage**: 30TB Lustre filesystem per group
 - **Local storage**: 1TB NVMe SSD per compute node
 
+### Networking Infrastructure
+- **Management Network**: Netgear M4300-52G switch with 48×1G ports plus 2×10GBASE-T and 2×SFP+
+- **High-Performance Interconnect**: Mellanox HDR InfiniBand switch with 40×QSFP56 ports
+- **InfiniBand Speed**: 200Gb/s HDR connectivity with hybrid copper cables
+- **Low Latency**: Sub-microsecond messaging for distributed computing workloads
+
 ### Software Environment
 - **Rocky Linux 8.5** operating system
 - **SLURM** workload manager
