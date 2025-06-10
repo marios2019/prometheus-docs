@@ -79,21 +79,33 @@ params:
 
     # set taxonomyPageHeader = [] to hide taxonomies on the page headers
     taxonomyPageHeader: [tags, categories]
-
   # privacy_policy: https://policies.google.com/privacy
-  # First one is picked as the Twitter card image if not set on page.
-  images: ["/icons/background.jpg"]
-
-  # Social media and link unfurling settings
+  
+  # Social Media Preview / Link Unfurling Settings
+  images: ["/images/background.jpg"]
   description: "High-Performance GPU Computing Cluster at CYENS Centre of Excellence - Advanced NVIDIA GPUs, AMD EPYC processors, and Lustre storage for AI research"
   
   # Open Graph / Social Media settings
   social:
     twitter: "@CYENS_CoE"  # Update with actual Twitter handle if available
+    facebook: "cyens.org.cy"  # Your Facebook page
+    linkedin: "company/cyens-centre-of-excellence"  # Your LinkedIn company page
     
   # SEO and social sharing
   author: "CYENS Centre of Excellence"
   keywords: ["deep learning", "GPU computing", "HPC", "NVIDIA", "research cluster", "AI", "machine learning"]
+  
+  # Open Graph specific settings
+  opengraph:
+    site_name: "Prometheus Cluster Documentation"
+    type: "website"
+    locale: "en_US"
+    
+  # Twitter Card settings
+  twitter:
+    card: "summary_large_image"
+    site: "@CYENS_CoE"
+    creator: "@CYENS_CoE"
 
   # Menu title if your navbar has a versions selector to access old versions of your site.
   # This menu appears only if you have at least one [params.versions] set.

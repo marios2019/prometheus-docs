@@ -2,6 +2,8 @@
 title: Prometheus Deep Learning Cluster
 tags: ["prometheus", "deep-learning", "cluster", "gpu-computing", "hpc", "nvidia", "cuda"]
 categories: ["cluster-computing", "documentation"]
+description: "High-Performance GPU Computing Cluster at CYENS Centre of Excellence featuring NVIDIA A5000 and A6000 Ada GPUs for AI research"
+images: ["/images/background.jpg"]
 ---
 
 {{< blocks/cover title="" image_anchor="middle" height="full" >}}
