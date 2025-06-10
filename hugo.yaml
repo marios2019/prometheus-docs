@@ -1,5 +1,5 @@
 baseURL: https://prometheus-docs.cyens.org.cy
-title: Prometheus Cluster Documentation
+title: Prometheus
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
@@ -46,7 +46,7 @@ imaging:
 languages:
   en:
     languageName: English
-    title: Prometheus Cluster Documentation
+    title: Prometheus
     params:
       description: High-Performance GPU Computing Cluster at CYENS Centre of Excellence
 
