@@ -8,7 +8,8 @@ images: ["/images/background.jpg"]
 
 {{< blocks/cover title="" image_anchor="middle" height="full" >}}
 <div class="text-center mb-4">
-<pre class="ascii-art" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.6), rgba(0, 86, 179, 0.7)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; margin: 0; font-size: 0.8em; line-height: 1.2; font-family: 'Courier New', monospace;">
+<div class="ascii-container">
+<pre class="ascii-art" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.6), rgba(0, 86, 179, 0.7)); border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; margin: 0; font-family: 'Courier New', monospace;">
    ________  ________  ________  _____ ______   _______  _________  ___  ___  _______   ___  ___  ________        
   |\   __  \|\   __  \|\   __  \|\   _ \  _   \|\  ___ \|\___   ___\\  \|\  \|\  ___ \ |\  \|\  \|\   ____\       
   \ \  \|\  \ \  \|\  \ \  \|\  \ \  \\\__\ \  \ \   __/\|___ \  \_\ \  \\\  \ \   __/|\ \  \\\  \ \  \___|_      
@@ -18,8 +19,9 @@ images: ["/images/background.jpg"]
       \|__|     \|__|\|__|\|_______|\|__|     \|__|\|_______|   \|__|  \|__|\|__|\|_______|\|_______|\_________\  
                                                                                                    \|_________|  
 </pre>
+</div>
 <div style="margin-top: 20px;">
-<p class="lead ascii-description" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.9)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; font-size: 1.1em;">
+<p class="lead ascii-description" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.9)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block;">
 High-Performance GPU Computing Cluster at CYENS Centre of Excellence
 </p>
 </div>
