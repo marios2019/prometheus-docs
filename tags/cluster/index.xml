@@ -45,7 +45,8 @@
  &lt;div class="pt-3 lead">
  
  &lt;div class="text-center mb-4">
-&lt;pre class="ascii-art" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.6), rgba(0, 86, 179, 0.7)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; margin: 0; font-size: 0.8em; line-height: 1.2; font-family: 'Courier New', monospace;">
+&lt;div class="ascii-container">
+&lt;pre class="ascii-art" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.6), rgba(0, 86, 179, 0.7)); border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; margin: 0; font-family: 'Courier New', monospace;">
  ________ ________ ________ _____ ______ _______ _________ ___ ___ _______ ___ ___ ________ 
  |\ __ \|\ __ \|\ __ \|\ _ \ _ \|\ ___ \|\___ ___\\ \|\ \|\ ___ \ |\ \|\ \|\ ____\ 
  \ \ \|\ \ \ \|\ \ \ \|\ \ \ \\\__\ \ \ \ __/\|___ \ \_\ \ \\\ \ \ __/|\ \ \\\ \ \ \___|_ 
@@ -55,8 +56,9 @@
  \|__| \|__|\|__|\|_______|\|__| \|__|\|_______| \|__| \|__|\|__|\|_______|\|_______|\_________\ 
  \|_________| 
 &lt;/pre>
+&lt;/div>
 &lt;div style="margin-top: 20px;">
-&lt;p class="lead ascii-description" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.9)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; font-size: 1.1em;">
+&lt;p class="lead ascii-description" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.9)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block;">
 High-Performance GPU Computing Cluster at CYENS Centre of Excellence
 &lt;/p></description></item><item><title>Prometheus Deep Learning Cluster</title><link>https://prometheus-docs.cyens.org.cy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://prometheus-docs.cyens.org.cy/</guid><description>&lt;link rel="preload" as="image" href="https://prometheus-docs.cyens.org.cy/background_hu_4147385d58e62359.jpg" media="(max-width: 1200px)">
 &lt;link rel="preload" as="image" href="https://prometheus-docs.cyens.org.cy/background_hu_243bf32fd2112589.jpg" media="(min-width: 1200px)">
@@ -79,7 +81,8 @@ High-Performance GPU Computing Cluster at CYENS Centre of Excellence
  &lt;div class="pt-3 lead">
  
  &lt;div class="text-center mb-4">
-&lt;pre class="ascii-art" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.6), rgba(0, 86, 179, 0.7)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; margin: 0; font-size: 0.8em; line-height: 1.2; font-family: 'Courier New', monospace;">
+&lt;div class="ascii-container">
+&lt;pre class="ascii-art" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.6), rgba(0, 86, 179, 0.7)); border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; margin: 0; font-family: 'Courier New', monospace;">
  ________ ________ ________ _____ ______ _______ _________ ___ ___ _______ ___ ___ ________ 
  |\ __ \|\ __ \|\ __ \|\ _ \ _ \|\ ___ \|\___ ___\\ \|\ \|\ ___ \ |\ \|\ \|\ ____\ 
  \ \ \|\ \ \ \|\ \ \ \|\ \ \ \\\__\ \ \ \ __/\|___ \ \_\ \ \\\ \ \ __/|\ \ \\\ \ \ \___|_ 
@@ -89,7 +92,8 @@ High-Performance GPU Computing Cluster at CYENS Centre of Excellence
  \|__| \|__|\|__|\|_______|\|__| \|__|\|_______| \|__| \|__|\|__|\|_______|\|_______|\_________\ 
  \|_________| 
 &lt;/pre>
+&lt;/div>
 &lt;div style="margin-top: 20px;">
-&lt;p class="lead ascii-description" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.9)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block; font-size: 1.1em;">
+&lt;p class="lead ascii-description" style="color: #ffffff; font-weight: bold; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.9)); padding: 20px 30px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-block;">
 High-Performance GPU Computing Cluster at CYENS Centre of Excellence
 &lt;/p></description></item></channel></rss>
