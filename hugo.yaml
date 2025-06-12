@@ -1,4 +1,4 @@
-baseURL: prometheus-docs.cyens.org.cy
+baseURL: https://prometheus-docs.cyens.org.cy/
 title: Prometheus
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
