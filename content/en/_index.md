@@ -26,10 +26,10 @@ High-Performance GPU Computing Cluster at CYENS Centre of Excellence
 </p>
 </div>
 </div>
-<a class="btn btn-lg btn-primary me-3 mb-4" href="docs/">
+<a class="btn btn-lg btn-primary me-3 mb-4" href="docs/getting-started/">
   Get Started <i class="fas fa-rocket ms-2"></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="docs/getting-started/">
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="docs/">
   User Guide <i class="fas fa-book ms-2"></i>
 </a>
 {{< blocks/link-down color="info" >}}
