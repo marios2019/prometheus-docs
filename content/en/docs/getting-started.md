@@ -95,19 +95,20 @@ Windows and WSL have separate SSH configurations. Windows applications normally 
 
 ### SSH configuration
 
-Add the following configuration on your operating system, replacing `<your-username>` with your Prometheus username. Change the key path if your private key has a different name.
+Add the following configuration on your operating system, replacing `<your-username>` with your Prometheus username and 
+`<path-to-your-private-key>` with the path to your private key (e.g., `~/.ssh/id_rsa`):
 
 ```sshconfig
 Host cyens-bastion
     HostName bastion.hpcf.cyi.ac.cy
     User <your-username>
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile <path-to-your-private-key>
     IdentitiesOnly yes
 
 Host prometheus
     HostName prometheus.cyens.org.cy
     User <your-username>
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile <path-to-your-private-key>
     IdentitiesOnly yes
     ProxyJump cyens-bastion
 ```
