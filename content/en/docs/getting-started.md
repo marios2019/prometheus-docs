@@ -98,7 +98,7 @@ Windows and WSL have separate SSH configurations. Windows applications normally 
 Add the following configuration on your operating system, replacing `<your-username>` with your Prometheus username and 
 `<path-to-your-private-key>` with the path to your private key (e.g., `~/.ssh/id_rsa`):
 
-```sshconfig
+```bash
 Host cyens-bastion
     HostName bastion.hpcf.cyi.ac.cy
     User <your-username>
