@@ -10,41 +10,45 @@ categories: ["getting-started", "authentication"]
 
 ## Prerequisites
 
-Before accessing the Prometheus cluster, you need:
+Before connecting, you need:
 
-- A valid cluster account (contact your MRG leader)
-- SSH client installed on your local machine
-- Basic familiarity with Linux command line
+- A Prometheus account (request one through your MRG leader)
+- An OpenSSH-compatible client
+- Your registered SSH private key
+- Basic familiarity with the Linux command line
 
 ## Generate SSH Keys
 
-The Prometheus cluster uses **RSA key authentication** for secure access. You need to generate a public/private key pair:
+The Prometheus cluster uses **RSA key authentication** for secure access. You need to generate a public/private key pair. 
+_Skip this section if you already have a registered Prometheus key._
 
-### Step 1: Create SSH Key Pair
+### Step 1: Create an SSH key
 
-Open your terminal and run:
-
-```bash
-ssh-keygen
-```
-
-Follow the on-screen instructions. This creates:
-- **Private key**: `~/.ssh/id_rsa` (keep this secure!)
-- **Public key**: `~/.ssh/id_rsa.pub` (share this with administrators)
-
-### Step 2: Secure Your Private Key
-
-For Linux/Mac users, set proper permissions:
+#### macOS or Linux
 
 ```bash
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa
 chmod 600 ~/.ssh/id_rsa
 ```
 
+#### Windows
+
+Open PowerShell and run:
+
+```powershell
+ssh-keygen -t rsa -b 4096 -f "$HOME\.ssh\id_rsa"
+```
+
+This creates:
+
+- `id_rsa`: your private key; **never share it**
+- `id_rsa.pub`: the public key to send to your MRG leader or cluster administrator
+
 ### Step 3: Request Cluster Access
 
-1. **Send your public key** to your MRG leader
-2. **Request a Prometheus account** 
-3. **Wait for account confirmation**
+1. Send your public key to your MRG leader
+2. Request a Prometheus account 
+3. Wait for account confirmation
 
 ### Step 4: Add Passphrase (Optional but Recommended)
 
@@ -54,30 +58,80 @@ For additional security, add a passphrase to your key:
 ssh-keygen -p -f ~/.ssh/id_rsa
 ```
 
-## Connect to Prometheus
+## Configure SSH
 
-### Configure SSH Client
+Prometheus is reached through the CyI HPC bastion. SSH handles the additional hop automatically. The same Prometheus 
+username and private key are used for the bastion and the Prometheus login node. Your private key remains on your computer.
 
-Create or edit `~/.ssh/config` file with the following content:
+### macOS
 
 ```bash
-Host prometheus
-  Hostname prometheus.cyens.org.cy
-  User <your-username>
-  IdentityFile ~/.ssh/id_rsa
+touch ~/.ssh/config
+chmod 600 ~/.ssh/config
+open -e ~/.ssh/config
 ```
 
-Replace `<your-username>` with your actual cluster username.
+### Linux
 
-### Connect via SSH
+```bash
+touch ~/.ssh/config
+chmod 600 ~/.ssh/config
+nano ~/.ssh/config
+```
 
-Once your account is activated, connect using:
+### Windows
+
+Open PowerShell:
+
+```powershell
+notepad "$HOME\.ssh\config"
+```
+
+Save the file as `config`, without a `.txt` extension. Native Windows OpenSSH reads it from `C:\Users\<Windows-user>\.ssh\config`.
+
+{{% alert title="Windows and WSL" color="info" %}}
+Windows and WSL have separate SSH configurations. Windows applications normally use the Windows configuration above; applications running inside WSL use `~/.ssh/config` in WSL.
+{{% /alert %}}
+
+### SSH configuration
+
+Add the following configuration on your operating system, replacing `<your-username>` with your Prometheus username. Change the key path if your private key has a different name.
+
+```sshconfig
+Host cyens-bastion
+    HostName bastion.hpcf.cyi.ac.cy
+    User <your-username>
+    IdentityFile ~/.ssh/id_rsa
+    IdentitiesOnly yes
+
+Host prometheus
+    HostName prometheus.cyens.org.cy
+    User <your-username>
+    IdentityFile ~/.ssh/id_rsa
+    IdentitiesOnly yes
+    ProxyJump cyens-bastion
+```
+
+## Connect to Prometheus
+
+Once your account is activated and your SSH configuration is set up, connect using:
 
 ```bash
 ssh prometheus
 ```
 
-You should now be logged into the Prometheus head node!
+The connection path is:
+
+```text
+Your computer → CYENS bastion → Prometheus login node
+```
+
+After logging in, verify your session:
+
+```bash
+hostname
+whoami
+```
 
 ## First Login Setup
 
@@ -172,7 +226,6 @@ Now that you're connected to Prometheus:
 ## Getting Help
 
 - **Cluster status**: Use `sinfo` and `squeue` commands
-- **Documentation**: Check `/opt/cluster/docs/` on the cluster
 - **Support**: Contact your MRG leader
 - **System issues**: Report to cluster administrators
 
