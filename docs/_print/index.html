@@ -12,16 +12,17 @@ username and private key are used for the bastion and the Prometheus login node.
 </span></span><span style=display:flex><span>chmod <span style=color:#0000cf;font-weight:700>600</span> ~/.ssh/config
 </span></span><span style=display:flex><span>nano ~/.ssh/config
 </span></span></code></pre></div><h3 id=windows-1>Windows<a class=td-heading-self-link href=#windows-1 aria-label="Heading self-link"></a></h3><p>Open PowerShell:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell><span style=display:flex><span><span style=color:#000>notepad</span> <span style=color:#4e9a06>&#34;</span><span style=color:#000>$HOME</span><span style=color:#4e9a06>\.ssh\config&#34;</span>
-</span></span></code></pre></div><p>Save the file as <code>config</code>, without a <code>.txt</code> extension. Native Windows OpenSSH reads it from <code>C:\Users\&lt;Windows-user>\.ssh\config</code>.</p><div class="alert alert-info" role=alert><h4 class=alert-heading>Windows and WSL</h4>Windows and WSL have separate SSH configurations. Windows applications normally use the Windows configuration above; applications running inside WSL use <code>~/.ssh/config</code> in WSL.</div><h3 id=ssh-configuration>SSH configuration<a class=td-heading-self-link href=#ssh-configuration aria-label="Heading self-link"></a></h3><p>Add the following configuration on your operating system, replacing <code>&lt;your-username></code> with your Prometheus username. Change the key path if your private key has a different name.</p><pre tabindex=0><code class=language-sshconfig data-lang=sshconfig>Host cyens-bastion
+</span></span></code></pre></div><p>Save the file as <code>config</code>, without a <code>.txt</code> extension. Native Windows OpenSSH reads it from <code>C:\Users\&lt;Windows-user>\.ssh\config</code>.</p><div class="alert alert-info" role=alert><h4 class=alert-heading>Windows and WSL</h4>Windows and WSL have separate SSH configurations. Windows applications normally use the Windows configuration above; applications running inside WSL use <code>~/.ssh/config</code> in WSL.</div><h3 id=ssh-configuration>SSH configuration<a class=td-heading-self-link href=#ssh-configuration aria-label="Heading self-link"></a></h3><p>Add the following configuration on your operating system, replacing <code>&lt;your-username></code> with your Prometheus username and
+<code>&lt;path-to-your-private-key></code> with the path to your private key (e.g., <code>~/.ssh/id_rsa</code>):</p><pre tabindex=0><code class=language-sshconfig data-lang=sshconfig>Host cyens-bastion
     HostName bastion.hpcf.cyi.ac.cy
     User &lt;your-username&gt;
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile &lt;path-to-your-private-key&gt;
     IdentitiesOnly yes
 
 Host prometheus
     HostName prometheus.cyens.org.cy
     User &lt;your-username&gt;
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile &lt;path-to-your-private-key&gt;
     IdentitiesOnly yes
     ProxyJump cyens-bastion
 </code></pre><h2 id=connect-to-prometheus>Connect to Prometheus<a class=td-heading-self-link href=#connect-to-prometheus aria-label="Heading self-link"></a></h2><p>Once your account is activated and your SSH configuration is set up, connect using:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>ssh prometheus
