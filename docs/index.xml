@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prometheus Cluster Documentation on Prometheus</title><link>https://prometheus-docs.cyens.org.cy/docs/</link><description>Recent content in Prometheus Cluster Documentation on Prometheus</description><generator>Hugo</generator><language>en</language><atom:link href="https://prometheus-docs.cyens.org.cy/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started</title><link>https://prometheus-docs.cyens.org.cy/docs/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://prometheus-docs.cyens.org.cy/docs/getting-started/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;a class="td-heading-self-link" href="#prerequisites" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>Before accessing the Prometheus cluster, you need:&lt;/p>
+&lt;p>Before connecting, you need:&lt;/p>
 &lt;ul>
-&lt;li>A valid cluster account (contact your MRG leader)&lt;/li>
-&lt;li>SSH client installed on your local machine&lt;/li>
-&lt;li>Basic familiarity with Linux command line&lt;/li>
+&lt;li>A Prometheus account (request one through your MRG leader)&lt;/li>
+&lt;li>An OpenSSH-compatible client&lt;/li>
+&lt;li>Your registered SSH private key&lt;/li>
+&lt;li>Basic familiarity with the Linux command line&lt;/li>
 &lt;/ul>
 &lt;h2 id="generate-ssh-keys">Generate SSH Keys&lt;a class="td-heading-self-link" href="#generate-ssh-keys" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>The Prometheus cluster uses &lt;strong>RSA key authentication&lt;/strong> for secure access. You need to generate a public/private key pair:&lt;/p>
-&lt;h3 id="step-1-create-ssh-key-pair">Step 1: Create SSH Key Pair&lt;a class="td-heading-self-link" href="#step-1-create-ssh-key-pair" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>Open your terminal and run:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh-keygen
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Follow the on-screen instructions. This creates:&lt;/p></description></item><item><title>Hardware Specifications</title><link>https://prometheus-docs.cyens.org.cy/docs/hardware/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://prometheus-docs.cyens.org.cy/docs/hardware/</guid><description>&lt;h2 id="cluster-overview">Cluster Overview&lt;a class="td-heading-self-link" href="#cluster-overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>The Prometheus cluster uses &lt;strong>RSA key authentication&lt;/strong> for secure access. You need to generate a public/private key pair.
+&lt;em>Skip this section if you already have a registered Prometheus key.&lt;/em>&lt;/p>
+&lt;h3 id="step-1-create-an-ssh-key">Step 1: Create an SSH key&lt;a class="td-heading-self-link" href="#step-1-create-an-ssh-key" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;h4 id="macos-or-linux">macOS or Linux&lt;a class="td-heading-self-link" href="#macos-or-linux" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh-keygen -t rsa -b &lt;span style="color:#0000cf;font-weight:bold">4096&lt;/span> -f ~/.ssh/id_rsa
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>chmod &lt;span style="color:#0000cf;font-weight:bold">600&lt;/span> ~/.ssh/id_rsa
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="windows">Windows&lt;a class="td-heading-self-link" href="#windows" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;p>Open PowerShell and run:&lt;/p></description></item><item><title>Hardware Specifications</title><link>https://prometheus-docs.cyens.org.cy/docs/hardware/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://prometheus-docs.cyens.org.cy/docs/hardware/</guid><description>&lt;h2 id="cluster-overview">Cluster Overview&lt;a class="td-heading-self-link" href="#cluster-overview" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>The Prometheus cluster features a modern architecture optimized for deep learning workloads with high-performance GPUs, abundant memory, and fast storage systems.&lt;/p>
 &lt;h2 id="head-node">Head Node&lt;a class="td-heading-self-link" href="#head-node" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>&lt;strong>Management and login node for the cluster&lt;/strong>&lt;/p>
