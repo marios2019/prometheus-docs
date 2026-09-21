@@ -22,7 +22,7 @@ Before connecting, you need:
 The Prometheus cluster uses **RSA key authentication** for secure access. You need to generate a public/private key pair. 
 _Skip this section if you already have a registered Prometheus key._
 
-### Step 1: Create an SSH key
+### Create an SSH key
 
 #### macOS or Linux
 
@@ -44,13 +44,13 @@ This creates:
 - `id_rsa`: your private key; **never share it**
 - `id_rsa.pub`: the public key to send to your MRG leader or cluster administrator
 
-### Step 3: Request Cluster Access
+### Request Cluster Access
 
 1. Send your public key to your MRG leader
 2. Request a Prometheus account 
 3. Wait for account confirmation
 
-### Step 4: Add Passphrase (Optional but Recommended)
+### Add Passphrase (Optional but Recommended)
 
 For additional security, add a passphrase to your key:
 
@@ -95,7 +95,7 @@ Windows and WSL have separate SSH configurations. Windows applications normally 
 
 ### SSH configuration
 
-Add the following configuration on your operating system, replacing `<your-username>` with your Prometheus username and 
+Add the following configuration in your SSH config file, replacing `<your-username>` with your Prometheus username and 
 `<path-to-your-private-key>` with the path to your private key (e.g., `~/.ssh/id_rsa`):
 
 ```bash
