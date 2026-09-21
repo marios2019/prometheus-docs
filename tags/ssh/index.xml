@@ -9,7 +9,7 @@
 &lt;h2 id="generate-ssh-keys">Generate SSH Keys&lt;a class="td-heading-self-link" href="#generate-ssh-keys" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>The Prometheus cluster uses &lt;strong>RSA key authentication&lt;/strong> for secure access. You need to generate a public/private key pair.
 &lt;em>Skip this section if you already have a registered Prometheus key.&lt;/em>&lt;/p>
-&lt;h3 id="step-1-create-an-ssh-key">Step 1: Create an SSH key&lt;a class="td-heading-self-link" href="#step-1-create-an-ssh-key" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;h3 id="create-an-ssh-key">Create an SSH key&lt;a class="td-heading-self-link" href="#create-an-ssh-key" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;h4 id="macos-or-linux">macOS or Linux&lt;a class="td-heading-self-link" href="#macos-or-linux" aria-label="Heading self-link">&lt;/a>&lt;/h4>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh-keygen -t rsa -b &lt;span style="color:#0000cf;font-weight:bold">4096&lt;/span> -f ~/.ssh/id_rsa
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>chmod &lt;span style="color:#0000cf;font-weight:bold">600&lt;/span> ~/.ssh/id_rsa
